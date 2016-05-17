@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0;}
+body{font:12px/150% Arial,Verdana,"\5b8b\4f53";color:#666;background: #fff;}
+.nav{
+	min-width: 990px;
+	width: auto;
+	height: 30px;
+	background-color: #F1F1F1;
+	font-size: 13px;
+	line-height: 30px;
+	position: relative;
+	z-index: 10;
+}
+.navCon{width: 1190px;margin: auto;}
+.nav-target{
+	position: relative;
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	float: left;
+	padding: 0 15px;
+}
+.dd-space{
+	position: absolute;
+	left: 0;
+	top: 30px;
+	z-index: 10;
+	width: 88px;
+	height: 10px;
+	background-color: #fff;
+}
+.nav-target table{
+	display: block;
+	position: absolute;
+	left: -1px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	padding: 5px;
+	margin: 0;
+}
+.nav-target table a{
+	display: block;
+	width: 50px;
+	height: 30px;
+	text-decoration: none;
+	color:#666;
+	text-align: center;
+	line-height: 30px;
+	margin: 1px 3px;
+}
+.hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+ul{list-style-type: none;}
+.nav-menu{
+	height: 30px;
+	position: absolute;
+	right: 5px;
+}
+.nav-menu li{
+	float: left;
+}
+.nav-menu li a{
+	text-decoration: none;
+	border-right: 1px solid #ddd;
+	padding: 0 10px;
+	color: #666;
+}
+.nav-menu li a:hover{color: #c00;}
