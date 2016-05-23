@@ -7,6 +7,26 @@
 	<link rel="stylesheet" type="text/css" href="stylesheets/header-style.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/nav23.css">
 	<link rel="stylesheet" type="text/css" href="stylesheets/detail.css">
+	<script type="text/javascript">
+		function addLoadEvent(func){
+			var oldload = window.onload;
+			if(typeof window.onload != "function"){
+				window.onload = func;
+			}else{
+				window.onload = function(){
+					oldload();
+					func();
+				}
+			}
+		}
+		function isMouseLeaveOrEnter(e, handler) {    
+			var reltg=e.relatedTarget?e.relatedTarget:e.type=='mouseout'?e.toElement:e.fromElement;    
+			while (reltg && reltg != handler){
+				reltg = reltg.parentNode; 
+			}       
+			return (reltg != handler);    
+		}
+	</script>
 </head>
 <body>
 	<div class="nav">
@@ -127,7 +147,9 @@
 		</div>
 	</div>
 
-	<div class="nav2"></div>
+	<div class="nav2" id="nav2">
+		<div class="nav2Con"></div>
+	</div>
 
 	<div class="nav3">
 		<div class="nav3Con">
@@ -189,11 +211,11 @@
 										<input class="text" id="buy-num" type="text" value="1">
 									</div>
 								</div>
-								<div class="btn" id="choose-btn-append">
-									<a class="btn-append" href="javascript:;">加入购物车</a>
-								</div>
 								<div class="btn" id=choose-btn-buy>
-									<a class="btn-buy" href="javascript:;">立刻购买</a>
+									<a class="btn-buy" href="javascript:;">立刻购买<b></b></a>
+								</div>
+								<div class="btn" id="choose-btn-append">
+									<a class="btn-append" href="javascript:;">加入购物车<b></b></a>
 								</div>
 							</div>
 						</div>
@@ -205,5 +227,6 @@
 
 	<div class="footer"></div>
 	
+	<script type="text/javascript" src="demo.js"></script>
 </body>
 </html>

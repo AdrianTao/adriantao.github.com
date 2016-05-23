@@ -2,6 +2,91 @@
 	height: 44px;
 	border-bottom: 2px solid #b1191a;
 }
+.nav2Con{
+	width: 1210px;
+	height: 44px;
+	position: relative;
+	margin:auto;
+}
+#categorys{
+	float: left;
+	left: 0;
+	height: auto;
+	position: absolute;
+	width: 210px;
+	background-color: #b1191a;
+	overflow: visible;
+	z-index: 100;
+}
+#categorys .dt a{
+	display: block;
+	width: 190px;
+	height: 44px;
+	padding: 0 10px;
+	background-color: #b1191a;
+	font:400 15px/44px "microsoft yahei";
+	color: #fff;
+	text-decoration: none;
+}
+#categorys .dd{
+	height: 466px;
+	background-color: #c81623;
+	margin-top: 2px;
+}
+#categorys .dd-inner .item{
+	border-left: 1px solid #b61d1d;
+	position: relative;
+	z-index: 1;
+	height: 42px;
+	color: #fff;
+	cursor: pointer;
+}
+#categorys .dd-inner .item.hover{background-color: #f7f7f7;color: #b61d1d;}
+#categorys .dd-inner .item h3{
+	position: absolute;
+	z-index: 2;
+	height: 42px;
+	padding: 0 10px;
+	line-height: 42px;
+	font-family: "microsoft yahei";
+	font-size: 14px;
+	font-weight: 400;
+}
+#categorys .dd-inner i{
+	position: absolute;
+	top: 14px;
+	right: 14px;
+	width: 4px;
+	height: 14px;
+	font: 400 9px/14px consolas;
+}
+#categorys .dd-inner .hover i{
+	display: block;
+	color: #f7f7f7;
+	background-color: #f7f7f7;
+	top: 0px;
+	height: 41px;
+	width: 10px;
+	right: -5px;
+	z-index: 110;
+	line-height: 20px;
+}
+#categorys .dorpdown-layer{
+	width: 999px;
+	position: absolute;
+	left: 209px;
+	top: 45px;
+	border:1px solid #b61d1d;
+	overflow: hidden;
+	background-color: #f7f7f7;
+	z-index: 100;
+}
+#categorys .dorpdown-layer iframe{
+	border:0;
+}
+
+
+
 .nav3{
 	background-color: #f2f2f2;
 }
@@ -11,6 +96,8 @@
 	line-height: 45px;
 	padding: 0 0 4px 6px;
 	vertical-align: baseline;
+	overflow: visible;
+	z-index: 20;
 }
 .nav3 .breadcrumb strong{
 	display: inline;

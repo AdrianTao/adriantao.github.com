@@ -103,7 +103,7 @@
 	background-color: #f7f7f7;
 	padding-left:72px; 
 }
-.dt{
+#summary .dt{
 	float: left;
 	width: 72px;
 	margin-left: -72px;
@@ -111,7 +111,7 @@
 	text-align: right;
 	font-family: simsun;
 }
-.dd{
+#summary .dd{
 	width: 432px;
 	margin-left: 10px;
 }
@@ -201,9 +201,15 @@ a.btn-add{top: -1px;}
 }
 #choose-btn .btn{
 	float: left;
+	position: relative;
 	height: 38px;
 	margin-top: 8px;
 	margin-bottom: 5px;
+}
+#choose-btn .btn a{
+	float: left;
+	margin-right: 6px;
+	overflow: hidden;
 }
 #choose-btn-append a{
 	line-height: 38px;
@@ -213,6 +219,27 @@ a.btn-add{top: -1px;}
 	color: #e4393c;
 	font:400 18px/38px "microsoft yahei";
 }
+#choose-btn-buy a{
+	line-height: 38px;
+	width: 137px;
+	height: 38px;
+	text-align: center;
+	color: #e4393c;
+	font:400 18px/38px "microsoft yahei";
+}
+#choose-btn a b{
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;cursor: pointer;
+	background-image: url(../images/p-btns.png);
+	background-repeat: no-repeat;
+}
+#choose-btn-append a b{background-position: -314px 0;}
+#choose-btn-buy a b{background-position: 0 -124px;}
+
 
 
 
