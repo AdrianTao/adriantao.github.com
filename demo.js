@@ -111,7 +111,7 @@ Demo.prototype = {
 		var that = this;
 		this.iframe.firstChild.onload = function(){
 			alert(this.src);
-			if (this.src != "ttp://adriantao.github.io/") {
+			if (this.src != "http://adriantao.github.io/") {
 				alert(111);
 				this.style.display = "block";
 				that.loadWord.style.display = "none";
