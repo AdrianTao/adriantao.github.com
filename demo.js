@@ -46,7 +46,7 @@ Demo.prototype = {
 		var items = this.box.getElementsByClassName("item");
 		var duang = function(arr){
 			document.getElementsByClassName("loadWord")[0].style.display = "block";
-			alert(document.getElementsByClassName("loadWord")[0].style.display);
+			this.iframe.firstChild.style.display = "none";
 			for(var j=0 ; j<items.length ; j++){
 				arr[j].classList.remove("hover");
 			}
@@ -110,9 +110,7 @@ Demo.prototype = {
 	iframeLoad:function(){
 		var that = this;
 		this.iframe.firstChild.onload = function(){
-			alert(this.src);
 			if (this.src != "http://adriantao.github.io/") {
-				alert(111);
 				this.style.display = "block";
 				that.loadWord.style.display = "none";
 			}
