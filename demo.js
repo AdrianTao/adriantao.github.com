@@ -46,13 +46,21 @@ Demo.prototype = {
 			that.dd.style.display = "block";
 		};
 		this.categorys.onmouseout = function(event){
-			this.classList.remove("hover");
-			that.dd.style.display = "none";
+			if(isMouseLeaveOrEnter(event,this)){
+				this.classList.remove("hover");
+				that.dd.style.display = "none";
+				that.iframe.style.display = "none";
+				that.iframe.firstChild.src = "";
+				for(var j=0 ; j<items.length ; j++){
+					items[j].classList.remove("hover");
+				}
+			}
 		}
 		var items = this.box.getElementsByClassName("item");
 		for(var i=0 ; i<items.length ; i++){
 			items[i].index = i;
 			items[i].onmouseover = function(event){
+				var they = this;
 				if(!isMouseLeaveOrEnter(event, this)){
 					return false;
 				}
@@ -61,9 +69,14 @@ Demo.prototype = {
 				}
 				this.classList.add("hover");
 				that.iframe.style.display = "block";
-				that.iframe.firstChild.src = data[this.index].url;
+				setTimeout(function(){
+					if (they.classList.contains("hover")) {
+						that.iframe.firstChild.src = data[they.index].url;
+					}
+				},200);
 			};
 			items[i].onmouseout = function(event){
+				//移到子节点不触发
 				if(!isMouseLeaveOrEnter(event, this)){
 					return false;
 				}
