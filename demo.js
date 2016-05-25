@@ -46,7 +46,7 @@ Demo.prototype = {
 		var items = this.box.getElementsByClassName("item");
 		var duang = function(arr){
 			document.getElementsByClassName("loadWord")[0].style.display = "block";
-			this.iframe.firstChild.style.display = "none";
+			that.iframe.firstChild.style.display = "none";
 			for(var j=0 ; j<items.length ; j++){
 				arr[j].classList.remove("hover");
 			}
