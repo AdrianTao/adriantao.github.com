@@ -73,6 +73,7 @@
 }
 #categorys .dorpdown-layer{
 	width: 999px;
+	height: 484px;
 	position: absolute;
 	left: 209px;
 	top: 45px;
@@ -83,6 +84,12 @@
 }
 #categorys .dorpdown-layer iframe{
 	border:0;
+}
+#categorys .dorpdown-layer .loadWord{
+	position: absolute;
+	left: 470px;
+	top: 240px;
+	font-size:20px;
 }
 
 

@@ -2,7 +2,7 @@ function Demo(data){
 	this.data = data;
 	this.box = null;
 	this.categorys = null;
-	this.dt = null;
+	this.loadWord = null;
 	this.dd = null;
 	this.iframe = null;
 }
@@ -33,14 +33,22 @@ Demo.prototype = {
 		this.iframe = document.createElement("div");
 		this.iframe.className = "dorpdown-layer";
 		this.iframe.style.display = "none";
-		this.iframe.innerHTML = "<iframe style='width:999px;height:484px;'></iframe>";
+		this.iframe.innerHTML = "<iframe style='width:999px;height:484px;display:none'></iframe><div class='loadWord'>正在加载...</div>";
 		this.dd.appendChild(this.iframe);
 		this.categorys.appendChild(this.dd);
 		this.box.appendChild(this.categorys);
+		this.loadWord = document.getElementsByClassName("loadWord")[0];
 	},
+	//鼠标事件
 	mouseAction:function(data){
 		var that = this;
 		var data = data;
+		var items = this.box.getElementsByClassName("item");
+		var duang = function(arr){
+			for(var j=0 ; j<items.length ; j++){
+				arr[j].classList.remove("hover");
+			}
+		}
 		this.categorys.onmouseover = function(event){
 			this.classList.add("hover");
 			that.dd.style.display = "block";
@@ -51,12 +59,10 @@ Demo.prototype = {
 				that.dd.style.display = "none";
 				that.iframe.style.display = "none";
 				that.iframe.firstChild.src = "";
-				for(var j=0 ; j<items.length ; j++){
-					items[j].classList.remove("hover");
-				}
+				duang(items);
 			}
 		}
-		var items = this.box.getElementsByClassName("item");
+		
 		for(var i=0 ; i<items.length ; i++){
 			items[i].index = i;
 			items[i].onmouseover = function(event){
@@ -88,16 +94,22 @@ Demo.prototype = {
 				},300);
 			};
 		}
+		//离开展示框体
 		this.iframe.firstChild.onmouseout = function(event){
 			setTimeout(function(){
 				if (isMouseLeaveOrEnter(event,that.dd)) {
 					that.iframe.style.display = "none";
 					that.iframe.firstChild.src = "";
-					for(var j=0 ; j<items.length ; j++){
-						items[j].classList.remove("hover");
-					}
+					duang(items);
 				}
 			},500);
+		};
+	},
+	iframeLoad:function(){
+		var that = this;
+		this.iframe.firstChild.onload = function(){
+			this.style.display = "block";
+			that.loadWord.style.display = "none";
 		};
 	}
 }
@@ -117,4 +129,5 @@ addLoadEvent(function(){
 	]);
 	demo.init("nav2");
 	demo.mouseAction(demo.data);
+	demo.iframeLoad();
 });
