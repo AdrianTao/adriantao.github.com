@@ -80,6 +80,8 @@ Demo.prototype = {
 				setTimeout(function(){
 					if (they.classList.contains("hover")) {
 						that.iframe.firstChild.src = data[they.index].url;
+						document.getElementsByClassName("loadWord")[0].style.display = "block";
+						that.iframe.firstChild.style.display = "none";
 					}
 				},200);
 			};
