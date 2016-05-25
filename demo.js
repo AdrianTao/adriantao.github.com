@@ -110,6 +110,7 @@ Demo.prototype = {
 	iframeLoad:function(){
 		var that = this;
 		this.iframe.firstChild.onload = function(){
+			alert(this.src);
 			if (this.src != "ttp://adriantao.github.com/index.html") {
 				alert(111);
 				this.style.display = "block";
