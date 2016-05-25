@@ -45,6 +45,8 @@ Demo.prototype = {
 		var data = data;
 		var items = this.box.getElementsByClassName("item");
 		var duang = function(arr){
+			document.getElementsByClassName("loadWord")[0].style.display = "block";
+			alert(document.getElementsByClassName("loadWord")[0].style.display);
 			for(var j=0 ; j<items.length ; j++){
 				arr[j].classList.remove("hover");
 			}
@@ -108,8 +110,11 @@ Demo.prototype = {
 	iframeLoad:function(){
 		var that = this;
 		this.iframe.firstChild.onload = function(){
-			this.style.display = "block";
-			that.loadWord.style.display = "none";
+			if (this.src != "ttp://adriantao.github.com/index.html") {
+				alert(111);
+				this.style.display = "block";
+				that.loadWord.style.display = "none";
+			}
 		};
 	}
 }
