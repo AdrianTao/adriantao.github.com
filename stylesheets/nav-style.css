@@ -30,11 +30,32 @@ a:hover{
 	padding: 0 15px;
 	cursor: default;
 }
+.nav .ci-right{
+	top: 12px;
+	right: 1px;
+	height: 7px;
+	overflow: hidden;
+	font: 400 15px/15px consolas;
+	color: #6a6a6a;
+	transition: transform .1s ease-in 0s;
+	-webkit-transition: -webkit-transfrom .1s ease-in 0s;
+	display: block;
+	position: absolute;
+}
+.nav .hover .ci-right{
+	transform: rotate(180deg);
+	-webkit-transform :rotate(180deg);
+}
+.nav-target .ci-right s{
+	position: relative;
+	top: -7px;
+	text-decoration: none;
+}
 .dd-space{
 	position: absolute;
-	left: 0;
-	top: 30px;
-	z-index: 10;
+	left: -15px;
+	top: -5px;
+	z-index: 11;
 	width: 88px;
 	height: 10px;
 	background-color: #fff;
@@ -42,11 +63,12 @@ a:hover{
 .nav-target table{
 	display: block;
 	position: absolute;
-	left: -1px;
+	left: -16px;
 	background-color: #fff;
 	border: 1px solid #ddd;
 	padding: 5px;
 	margin: 0;
+	z-index: 10;
 }
 .nav-target table a{
 	display: block;

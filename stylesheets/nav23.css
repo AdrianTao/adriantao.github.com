@@ -16,7 +16,7 @@
 	width: 210px;
 	background-color: #b1191a;
 	overflow: visible;
-	z-index: 100;
+	z-index: 9;
 }
 #categorys .dt a{
 	display: block;
@@ -26,6 +26,26 @@
 	background-color: #b1191a;
 	font:400 15px/44px "microsoft yahei";
 	color: #fff;
+	text-decoration: none;
+}
+#nav2 .hover .dt .ci-right{
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+#nav2 .dt .ci-right{
+	top: 20px;
+	right: 7px;
+	height: 7px;
+	overflow: hidden;
+	font: 700 20px/16px simsun;
+	transition: :transform .1s ease-in 0s;
+	-webkit-transition: -webkit-transform .1s ease-in 0s;
+	display: block;
+	position: absolute;
+}
+#categorys .dt s{
+	position: relative;
+	top: -9px;
 	text-decoration: none;
 }
 #categorys .dd{
@@ -91,6 +111,7 @@
 	top: 240px;
 	font-size:20px;
 }
+#
 
 
 

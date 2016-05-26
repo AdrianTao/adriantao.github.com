@@ -13,7 +13,7 @@ Demo.prototype = {
 		this.categorys = document.createElement("div");
 		this.categorys.className = "dorpdown";
 		this.categorys.id = "categorys";
-		this.categorys.innerHTML = "<div class='dt'><a href='javascript:;'>作品列表</a><i></i></div>";
+		this.categorys.innerHTML = "<div class='dt'><a href='javascript:;'>作品列表<i class='ci-right'><s>◇</s></i></a></div>";
 		this.dd = document.createElement("div");
 		this.dd.className = "dd";
 		this.dd.style.display = "none";
