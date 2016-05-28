@@ -38,7 +38,7 @@ a:hover{
 	font: 400 15px/15px consolas;
 	color: #6a6a6a;
 	transition: transform .1s ease-in 0s;
-	-webkit-transition: -webkit-transfrom .1s ease-in 0s;
+	-webkit-transition: -webkit-transform .1s ease-in 0s;
 	display: block;
 	position: absolute;
 }

@@ -94,6 +94,27 @@
 	width: 100%;
 	position: relative;
 }
+#summary #comment-count{
+	position: absolute;
+	top: 10px;
+	right: 5px;
+	z-index: 6;
+	padding:0 10px;
+	border-left: 1px solid #ddd;
+}
+#summary #comment-count .comment{
+	display: block;
+	width: 48px;
+}
+#summary #comment-count .count{
+	display: block;
+	width: 48px;
+	text-align: center;
+	color:#005ea7;
+}
+#summary #comment-count .count:hover{
+	color: #005ea7;
+}
 #summary-price{
 	padding-top: 10px;
 	margin-bottom: 0;

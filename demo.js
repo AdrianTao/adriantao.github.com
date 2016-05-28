@@ -37,6 +37,11 @@ Demo.prototype = {
 		this.dd.appendChild(this.iframe);
 		this.categorys.appendChild(this.dd);
 		this.box.appendChild(this.categorys);
+
+		var nav2item = document.createElement("div");
+		nav2item.className = "nav2item";
+		nav2item.innerHTML = '<ul><li><a href="#">首页</a></li><li><a href="#">服装城</a></li><li><a href="#">超市</a></li><li><a href="#">全球购</a></li><li><a href="#">拍卖</a></li><li><a href="#">数码</a></li><li><a href="#">金融</a></li></ul>';
+		this.box.appendChild(nav2item);
 		this.loadWord = document.getElementsByClassName("loadWord")[0];
 	},
 	//鼠标事件
@@ -51,7 +56,7 @@ Demo.prototype = {
 				arr[j].classList.remove("hover");
 			}
 		}
-		this.categorys.onmouseover = function(event){
+		this.categorys.onmouseover = this.categorys.onclick = function(event){
 			this.classList.add("hover");
 			that.dd.style.display = "block";
 		};

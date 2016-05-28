@@ -111,7 +111,18 @@
 	top: 240px;
 	font-size:20px;
 }
-#
+.nav2item{
+	margin-left: 210px;
+}
+.nav2item li{
+	list-style-type: none;
+	float: left;
+	width: 79px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	font: 400 15px/44px "microsoft yahei";
+}
 
 
 
