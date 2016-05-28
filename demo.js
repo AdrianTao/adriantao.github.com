@@ -56,7 +56,7 @@ Demo.prototype = {
 				arr[j].classList.remove("hover");
 			}
 		}
-		this.categorys.onmouseover = this.categorys.onclick = function(event){
+		this.categorys.onmouseover = this.categorys.ontouchstart = function(event){
 			this.classList.add("hover");
 			that.dd.style.display = "block";
 		};
@@ -68,7 +68,7 @@ Demo.prototype = {
 				that.iframe.firstChild.src = "";
 				duang(items);
 			}
-		}
+		};
 		
 		for(var i=0 ; i<items.length ; i++){
 			items[i].index = i;
