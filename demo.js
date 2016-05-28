@@ -56,7 +56,7 @@ Demo.prototype = {
 				arr[j].classList.remove("hover");
 			}
 		}
-		this.categorys.onmouseover = this.categorys.ontouchstart = function(event){
+		this.categorys.onmouseover = function(event){
 			this.classList.add("hover");
 			that.dd.style.display = "block";
 		};
@@ -82,13 +82,15 @@ Demo.prototype = {
 				}
 				this.classList.add("hover");
 				that.iframe.style.display = "block";
-				setTimeout(function(){
+				if(event.type == 'onmouseover'){
+					setTimeout(function(){
 					if (they.classList.contains("hover")) {
 						that.iframe.firstChild.src = data[they.index].url;
 						document.getElementsByClassName("loadWord")[0].style.display = "block";
 						that.iframe.firstChild.style.display = "none";
 					}
 				},200);
+				}
 			};
 			items[i].onmouseout = function(event){
 				//移到子节点不触发
