@@ -72,7 +72,7 @@ Demo.prototype = {
 		
 		for(var i=0 ; i<items.length ; i++){
 			items[i].index = i;
-			items[i].onmouseover = items[i].onclick = function(event){
+			items[i].onmouseover = function(event){
 				var they = this;
 				if(!isMouseLeaveOrEnter(event, this)){
 					return false;
