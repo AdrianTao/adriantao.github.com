@@ -3,10 +3,86 @@
 }
 .recommendCon{
 	width: 1210px;
+	height: auto;
 	margin:auto;
 	margin-bottom: 10px;
 	border: 1px solid #ccc;
 }
-.recommend h2{
+.recommend-title{
+	padding-left: 8px;
+	background-color: #f7f7f7;
+	height: 30px;
+	line-height: 30px;
+}
+.recommend-box{
+	height: 165px;
+	padding: 10px 0;
+	border-top: none;
+	overflow: visible;
+}
+.recommend-box .master{
+	float: left;
+	width: 150px;
+	padding: 0 0 0 10px;
+	text-align: center;
+	overflow: hidden;
+}
+.recommend .master s{
+	float: right;
+	display: inline;
+	width: 24px;
+	height: 22px;
+	background-position: 0 -260px;
+	margin-top: 40px;
+	margin-right: 3px;
+	background-image: url(../images/newicon.png);
+	background-repeat: no-repeat;
+}
+.p-img{
+	padding: 5px 0;
+}
+.p-img a:link{
+	text-decoration: none;
+}
+.p-name{
+	width: 70%;
+	padding: 0 13px;
+	height: 3em;
+	line-height: 3em;
+}
+.recommend-box .suits{
+	float: left;
+	width: 150px;
+	text-align: center;
+	overflow: hidden;
+}
+.infos{
+	float: left;
+	width: 150px;
+	text-align: center;
+	overflow: hidden;
+}
+.infos s{
+	float: left;
+	width: 24px;
+	height: 22px;
+	height: 22px;
+	background: url(../images/newicon.png) no-repeat -30px -260px;
+	margin-top: 40px;
+}
+.infos .btn{
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.infos .btn a{
 	display: block;
+	width: 77px;
+	height: 25px;
+	margin-top: 10px;
+	background:url(../images/newicon.png) no-repeat -166px -112px;
+	text-align: center;
+	line-height: 25px;
+	color:#fff;
+	font-weight: 700;
 }

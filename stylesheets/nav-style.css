@@ -1,4 +1,8 @@
 *{margin: 0;padding: 0;}
+img{
+	border:0;
+	vertical-align: middle;
+}
 body{font:12px/150% Arial,Verdana,"\5b8b\4f53";color:#666;background: #fff;}
 a{text-decoration: none;
 	color:#666;
