@@ -163,7 +163,7 @@
 }
 
 #summary-promotions .dd strong{font-weight: bold;color: black;font-size: 18px;}
-.summary-stock{
+.summary-stock,.summary-service{
 	position: relative;
 	padding:6px 20px 6px 72px;
 }
@@ -260,8 +260,65 @@ a.btn-add{top: -1px;}
 }
 #choose-btn-append a b{background-position: -314px 0;}
 #choose-btn-buy a b{background-position: 0 -124px;}
-
-
+#choose .dt{
+	float: left;
+	width: 72px;
+	margin-left: -72px;
+	display: inline;
+	text-align: right;
+	font-family: simsun;
+}
+#choose .dd{
+	overflow: hidden;
+}
+#choose .item {
+	float: left;
+	margin:2px 8px 2px 0;
+}
+#choose .item.selected{
+	position: relative;
+}
+#choose .item.selected b{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 12px;
+	height: 12px;
+	overflow: hidden;
+	background: url(../images/newicon.png) no-repeat -202px -224px;
+}
+#choose .item a{
+	float: left;
+}
+#choose .item.selected a{
+	padding: 3px 5px;
+	border: 2px solid #e4393c;
+}
+#choose .item a{
+	padding: 4px 6px;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+#choose .item a:hover{
+	padding: 3px 5px;
+	border: 2px solid #e4393c;
+}
+#choose-color{
+	width: 516px;
+	padding: 5px 0 5px 72px;
+	float: left;
+}
+#choose-color .dt{
+	margin-top: 10px;
+}
+#choose-version{
+	width: 516px;
+	padding: 5px 0 5px 72px;
+	float: left;
+}
+#choose-version .dt{
+	margin-top: 10px;
+}
 
 
 

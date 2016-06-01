@@ -1,0 +1,12 @@
+.recommend{
+
+}
+.recommendCon{
+	width: 1210px;
+	margin:auto;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+}
+.recommend h2{
+	display: block;
+}

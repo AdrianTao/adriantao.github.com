@@ -78,6 +78,7 @@
 	right: 14px;
 	width: 4px;
 	height: 14px;
+	z-index: 21;
 	font: 400 9px/14px consolas;
 }
 #categorys .dd-inner .hover i{
@@ -85,10 +86,9 @@
 	color: #f7f7f7;
 	background-color: #f7f7f7;
 	top: 0px;
-	height: 41px;
+	height: 42px;
 	width: 10px;
-	right: -5px;
-	z-index: 110;
+	left: 205px;
 	line-height: 20px;
 }
 #categorys .dorpdown-layer{
@@ -100,7 +100,7 @@
 	border:1px solid #b61d1d;
 	overflow: hidden;
 	background-color: #f7f7f7;
-	z-index: 100;
+	z-index: 20;
 }
 #categorys .dorpdown-layer iframe{
 	border:0;
