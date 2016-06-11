@@ -56,10 +56,13 @@ Demo.prototype = {
 				arr[j].classList.remove("hover");
 			}
 		}
+		//进入列表
 		this.categorys.onmouseover = function(event){
 			this.classList.add("hover");
 			that.dd.style.display = "block";
+			document.body.style.overflow = "hidden";
 		};
+		//移出列表
 		this.categorys.onmouseout = function(event){
 			if(isMouseLeaveOrEnter(event,this)){
 				this.classList.remove("hover");
@@ -67,6 +70,7 @@ Demo.prototype = {
 				that.iframe.style.display = "none";
 				that.iframe.firstChild.src = "";
 				duang(items);
+				document.body.style.overflow = "visible";
 			}
 		};
 		
@@ -110,6 +114,7 @@ Demo.prototype = {
 					that.iframe.style.display = "none";
 					that.iframe.firstChild.src = "";
 					duang(items);
+					document.body.style.overflow = "visible";
 				}
 			},500);
 		};
