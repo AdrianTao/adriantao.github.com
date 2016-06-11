@@ -33,7 +33,7 @@ Demo.prototype = {
 		this.iframe = document.createElement("div");
 		this.iframe.className = "dorpdown-layer";
 		this.iframe.style.display = "none";
-		this.iframe.innerHTML = "<iframe style='width:999px;height:484px;display:none'></iframe><div class='loadWord'>正在加载...</div>";
+		this.iframe.innerHTML = "<iframe style='width:999px;height:520px;display:none'></iframe><div class='loadWord'>正在加载...</div>";
 		this.dd.appendChild(this.iframe);
 		this.categorys.appendChild(this.dd);
 		this.box.appendChild(this.categorys);

@@ -49,14 +49,14 @@
 	text-decoration: none;
 }
 #categorys .dd{
-	height: 506px;
+	height: 505px;
 	background-color: #c81623;
 	margin-top: 2px;
 }
 #categorys .dd-inner .item{
 	border-left: 1px solid #b61d1d;
 	position: relative;
-	z-index: 1;
+	z-index: 21;
 	height: 42px;
 	color: #fff;
 	cursor: pointer;
@@ -93,7 +93,7 @@
 }
 #categorys .dorpdown-layer{
 	width: 999px;
-	height: 484px;
+	height: 520px;
 	position: absolute;
 	left: 209px;
 	top: 45px;
