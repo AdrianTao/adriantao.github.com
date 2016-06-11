@@ -127,6 +127,7 @@ Demo.prototype = {
 addLoadEvent(function(){
 	var demo = new Demo([
 		{url:"http://adriantao.github.io/Demo/drag/01/index.html",text:"可拖动并改变大小的窗体"},
+		{url:"http://adriantao.github.io/Demo/2048/index.html",text:"2048"},
 		{url:"http://adriantao.github.io/Demo/snake/index.html",text:"贪吃蛇"},
 		{url:"http://adriantao.github.io/Demo/Tetris/index.html",text:"俄罗斯方块"},
 		{url:"http://adriantao.github.io/Demo/calculator/index.html", text:"web计算器"},
