@@ -131,18 +131,18 @@ Demo.prototype = {
 }
 addLoadEvent(function(){
 	var demo = new Demo([
-		{url:"http://adriantao.github.io/Demo/drag/01/index.html",text:"可拖动并改变大小的窗体"},
-		{url:"http://adriantao.github.io/Demo/2048/index.html",text:"2048"},
-		{url:"http://adriantao.github.io/Demo/snake/index.html",text:"贪吃蛇"},
-		{url:"http://adriantao.github.io/Demo/Tetris/index.html",text:"俄罗斯方块"},
-		{url:"http://adriantao.github.io/Demo/calculator/index.html", text:"web计算器"},
-		{url:"http://adriantao.github.io/Demo/drag/02/index.html", text:"滑动验证"},
-		{url:"http://adriantao.github.io/Demo/slide/01/index5.html", text:"仿淘宝首页图片轮换"},
-		{url:"http://adriantao.github.io/Demo/slide/02/index.html", text:"多个图片轮换"},
-		{url:"http://adriantao.github.io/Demo/slide/03/index.html", text:"仿亚马逊首页图片轮换"},
-		{url:"http://adriantao.github.io/Demo/mobile/index.html",text:"移动端效果展示"},
-		{url:"http://adriantao.github.io/Demo/other/page/index2.html",text:"页码效果"},
-		{url:"http://adriantao.github.io/Demo/other/1/index.html", text:"简易评分"}
+		{url:"http://adriantao.github.io/demo/drag/01/index.html",text:"可拖动并改变大小的窗体"},
+		{url:"http://adriantao.github.io/demo/2048/index.html",text:"2048"},
+		{url:"http://adriantao.github.io/demo/snake/index.html",text:"贪吃蛇"},
+		{url:"http://adriantao.github.io/demo/Tetris/index.html",text:"俄罗斯方块"},
+		{url:"http://adriantao.github.io/demo/calculator/index.html", text:"web计算器"},
+		{url:"http://adriantao.github.io/demo/drag/02/index.html", text:"滑动验证"},
+		{url:"http://adriantao.github.io/demo/slide/01/index5.html", text:"仿淘宝首页图片轮换"},
+		{url:"http://adriantao.github.io/demo/slide/02/index.html", text:"多个图片轮换"},
+		{url:"http://adriantao.github.io/demo/slide/03/index.html", text:"仿亚马逊首页图片轮换"},
+		{url:"http://adriantao.github.io/demo/mobile/index.html",text:"移动端效果展示"},
+		{url:"http://adriantao.github.io/demo/other/page/index2.html",text:"页码效果"},
+		{url:"http://adriantao.github.io/demo/other/1/index.html", text:"简易评分"}
 	]);
 	demo.init("nav2");
 	demo.mouseAction(demo.data);
